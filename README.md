@@ -98,10 +98,10 @@ Console.Clear();
                         //Close Program
                         case "5":
                            Console.Clear();
-                           Console.WriteLine("======================");
+                          
                            Console.WriteLine("Terminado com sucesso!");
                            Console.WriteLine("Até breve!");
-                           Console.WriteLine("======================");
+                          
                            return false;
                            
 
