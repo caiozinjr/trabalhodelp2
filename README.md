@@ -26,35 +26,25 @@ class MainClass {
     {
       produto.Imprimir();
     }
-    Console.WriteLine("======================");
     Console.WriteLine("PRESSIONE QUALQUER TECLA PARA VOLTAR");
-    Console.WriteLine("======================");
   }
 
 
   public static void Procurar()
   {  
     Console.Clear();
-    Console.WriteLine("======================");
     Console.WriteLine("Escreva o nome do produto de que deseja procurar");
-    Console.WriteLine("======================");
-
     string procurar_ = Console.ReadLine();
  
     Console.Clear();
-    Console.WriteLine("======================");
     Console.WriteLine("Mostrando todos os registros de: {0}", procurar_);
-    Console.WriteLine("======================");
   
     List<Produto> produtos = Produto.ProcurarProdutos(procurar_);
     foreach(var produto in produtos)
     {
       produto.Imprimir();
     }
-  
-    Console.WriteLine("======================");
     Console.WriteLine("PRESSIONE QUALQUER TECLA PARA VOLTAR");
-    Console.WriteLine("======================");
   }
  
 
@@ -74,13 +64,13 @@ class MainClass {
           private static bool MenuPrincipal()
             {
 Console.Clear();
-                Console.WriteLine("==================================================================");
+     
                 Console.WriteLine("Entre com '1' para Procurar os produtos");
                 Console.WriteLine("Entre com '2' para Deletar um produto");
                 Console.WriteLine("Entre com '3' para Cadastrar todos os produtos");
                 Console.WriteLine("Entre com '4' para Listar um produto");
                 Console.WriteLine("Entre com '5' para Fechar a aplicação");
-                Console.WriteLine("==================================================================");
+           
                 switch (Console.ReadLine())
                 {
                         
